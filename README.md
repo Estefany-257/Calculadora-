@@ -1,1 +1,54 @@
-# Calculadora-
+def somar(a, b):
+    return a + b
+
+
+def subtrair(a, b):
+    return a - b
+
+
+def multiplicar(a, b):
+    return a * b
+
+
+def dividir(a, b):
+    if b == 0:
+        return "Não é possível dividir por zero."
+    return a / b
+
+
+while True:
+    print("\n===== MENU DA CALCULADORA =====")
+    print("1 - Somar")
+    print("2 - Subtrair")
+    print("3 - Multiplicar")
+    print("4 - Dividir")
+    print("5 - Sair")
+
+    opcao = input("Escolha uma opção: ")
+
+    if opcao == "5":
+        print("Calculadora encerrada!")
+        break
+
+    elif opcao == "1":
+        a = float(input("Digite o primeiro número: "))
+        b = float(input("Digite o segundo número: "))
+        print("Resultado:", somar(a, b))
+
+    elif opcao == "2":
+        a = float(input("Digite o primeiro número: "))
+        b = float(input("Digite o segundo número: "))
+        print("Resultado:", subtrair(a, b))
+
+    elif opcao == "3":
+        a = float(input("Digite o primeiro número: "))
+        b = float(input("Digite o segundo número: "))
+        print("Resultado:", multiplicar(a, b))
+
+    elif opcao == "4":
+        a = float(input("Digite o primeiro número: "))
+        b = float(input("Digite o segundo número: "))
+        print("Resultado:", dividir(a, b))
+
+    else:
+        print("Opção inválida!")
